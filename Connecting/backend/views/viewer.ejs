@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewer Page</title>
+    <link rel="stylesheet" href="/public/css/viewer.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="/public/js/particles.js"></script>
+    <script type="text/javascript" src="/public/js/app.js"></script>
+    <div class="full-page">
+        <div class="content" style="height: 70%;">
+            <div class="left_panel">
+            <h3>Hello <%=user.username%> !!</h3><br>
+            <p id="para1">Welcome To Flow Fusion</p><br>
+            <p id="para2">Elevate your view : Witness the Data Flow</p>
+            </div>
+            <div class="right_panel">
+            <!-- <img
+                src="public/images/Developer.svg"
+                alt="Developer"
+                id="dev"
+            /><br />-->
+            <img src="/public/images/Viewer.svg" alt="welcome" id="welcome" />
+            </div>
+        </div>
+        <div class="btn-container">
+          <a href="/build2"><button class="btn">View Flow</button></a>
+          <a href="/logout"><button class="btn">Logout</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

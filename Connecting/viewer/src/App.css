@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+}
+
+
+
+button.restoreButton{
+  height: 50px;
+  width: 150px;
+  background-color: antiquewhite;
+  font-size: larger;
+}
+button.restoreButton:hover{
+  cursor: pointer;
+  background-color:rgb(166, 135, 222);
+}
+.react-flow__panel {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  left:750px;
+  margin-top: -4px;
+  padding: 10px;
+  background-color:black;
+  align-items: center;
+  height: 10vh;
+}
+
+.react-flow{
+  background-color: black;
+}
+.react-flow__panel button{
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.react-flow__panel p{
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.react-flow__attribution{
+  display: none;
+}
+
+.react-flow__node{
+  background-color: red;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: lighter;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration:underline;
+}
+/* .btn-holder{
+  position: absolute;
+  width: 150px;
+  padding: 1px;
+  bottom: 0px;
+  left: 46%;
+  background-color: black;
+}
+
+.btn-holder button{
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+ 
+}
+.btn-holder button:hover{
+  cursor: pointer;
+}
+ */
+

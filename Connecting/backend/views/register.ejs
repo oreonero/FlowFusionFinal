@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowFusion</title>
+    <link rel="stylesheet" href="/public/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="/public/js/particles.js"></script>
+    <script type="text/javascript" src="/public/js/app.js"></script>
+    <div class="container">
+        <div class="left-panel">
+            <div class="content">
+                <h3> Already an existing user?</h3>
+                <p>Welcome back!! Sign in to access your account and unlock a world of possibilities</p>
+                <a href="/login"><button class="btn" id="sign-in-btn">Sign in</button></a>
+            </div>
+            <img src="/public/images/sign-up.svg" alt="" class="image">
+        </div>
+        <div class="signup">
+            <form action="/register" method="post" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="username" id="sign-up-username" name="username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="email" id="sign-up-email" name="email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="password" id="sign-up-password" name="password">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <select class="mode" name="mode" id="mode">
+                        <option value="developer">Developer</option>
+                        <option value="viewer">Viewer</option>
+                    </select>
+                </div>
+                <input type="submit" value="Sign up" class="signup-btn">
+
+                <p class="social-text">Or Sign up with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="/login" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
